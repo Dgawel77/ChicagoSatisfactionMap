@@ -9,7 +9,7 @@ function initMap() {
     });
 
     var ctaLayer = new google.maps.KmlLayer({
-        url: 'https://data.cityofchicago.org/resource/igwz-8jzy.json%22',
+        url: 'https://data.cityofchicago.org/api/geospatial/cauq-8yn6?method=export&format=KML',
         map: map
       });
     console.log("got run");
