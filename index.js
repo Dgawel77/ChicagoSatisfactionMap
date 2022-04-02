@@ -7,7 +7,7 @@ function initMap() {
       });
     
       var ctaLayer = new google.maps.KmlLayer({
-        url: './ChicagoBoundaries.kml',
+        url: 'https://data.cityofchicago.org/api/geospatial/cauq-8yn6?method=export&format=KML',
         map: map
       });
     console.log("got run");
