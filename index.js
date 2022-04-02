@@ -7,7 +7,7 @@ function initMap() {
       });
     
       var ctaLayer = new google.maps.KmlLayer({
-        url: 'https://googlearchive.github.io/js-v2-samples/ggeoxml/cta.kml',
+        url: './ChicagoBoundaries.kml',
         map: map
       });
     console.log("got run");
