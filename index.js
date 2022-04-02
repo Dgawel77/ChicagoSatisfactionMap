@@ -9,7 +9,7 @@ function initMap() {
     
     map.data.setStyle((feature) => {
         let color = "gray";
-    
+        console.log(feature);
         if (feature.getProperty("isColorful")) {
           color = feature.getProperty("color");
         }
