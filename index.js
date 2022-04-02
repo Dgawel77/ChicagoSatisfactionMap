@@ -8,8 +8,8 @@ function initMap() {
     map.data.loadGeoJson("https://data.cityofchicago.org/api/geospatial/cauq-8yn6?method=export&format=GeoJSON");
     
     map.data.setStyle((feature) => {
-        let color = "gray";
-        console.log(feature);
+        let color = "red";
+        //console.log(feature);
         if (feature.getProperty("isColorful")) {
           color = feature.getProperty("color");
         }
@@ -30,6 +30,7 @@ function initMap() {
       map.data.addListener("mouseover", (event) => {
         map.data.revertStyle();
         map.data.overrideStyle(event.feature, { strokeWeight: 8 });
+        console.log(event.feature.getProperty("community"))
       });
       map.data.addListener("mouseout", (event) => {
         map.data.revertStyle();
