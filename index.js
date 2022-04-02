@@ -6,10 +6,8 @@ function initMap() {
         center: {lat: 41.876, lng: -87.624}
       });
     
-      var ctaLayer = new google.maps.KmlLayer({
-        url: 'https://data.cityofchicago.org/api/geospatial/cauq-8yn6?method=export&format=KML',
-        map: map
-      });
+    map.data.loadGeoJson("https://data.cityofchicago.org/api/geospatial/cauq-8yn6?method=export&format=GeoJSON");
+
     console.log("got run");
   }
   
