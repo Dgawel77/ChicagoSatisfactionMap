@@ -7,6 +7,11 @@ function initMap() {
       zoom: 4,
       center: uluru,
     });
+
+    var ctaLayer = new google.maps.KmlLayer({
+        url: 'https://data.cityofchicago.org/resource/igwz-8jzy.json%22',
+        map: map
+      });
     console.log("got run");
   }
   
