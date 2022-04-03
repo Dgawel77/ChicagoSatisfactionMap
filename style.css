@@ -61,6 +61,10 @@ body{
   margin: 30px;
 }
 
+#chart{
+    height: 20vw;
+}
+
 #tweets{
   overflow: scroll;
   background-color: #cf9055;
