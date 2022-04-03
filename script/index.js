@@ -126,7 +126,7 @@ var barColors = ["#ACB334","#FF4E11"];
   }
 
   function exampleMessages(community){
-    document.getElementById("tweets").innterHTML = ""
+    document.getElementById("tweets").innerHTML = ""
     var max = 2
     var count = 0
     const json = TweetsJson
