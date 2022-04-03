@@ -8,7 +8,7 @@ var barColors = ["#ACB334","#FF4E11"];
 
  function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
+        zoom: 9,
         center: {lat: 41.876, lng: -87.624},
         disableDefaultUI: true,
       });
@@ -116,7 +116,7 @@ var barColors = ["#ACB334","#FF4E11"];
             segmentShowStroke: false,
             title: {
                 display: true,
-                color:white,
+                color: "#fff",
                 //Change this text for the neighborhood
                 text: "Percentage of happy tweets in " + community
             }
@@ -125,5 +125,19 @@ var barColors = ["#ACB334","#FF4E11"];
   }
 
   function exampleMessages(community){
+    document.getElementById("tweets").innterHTML = ""
+    var max = 2
+    var count = 0
+    const json = TweetsJson
 
+    for(var i = 0; i < json.length; i++){
+
+      if(json[i].area=== community+"\n"){
+        document.getElementById("tweets").innerHTML += json[i].text + "\n\n"
+        count += 1
+      }
+      if (count > max){
+        return count;
+      }
+    }
   }

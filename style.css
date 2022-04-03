@@ -6,6 +6,7 @@
 
 *{
   color:white !important;
+  font-family: uncommonfont;
 }
 
 
@@ -53,6 +54,13 @@ body{
   width: 100vw;
   text-align: center;
   font-size: 50px;
-  font-family: uncommonfont;
+
   margin: 30px;
+}
+
+#tweets{
+  overflow: scroll;
+  background-color: #cf9055;
+  text-align:  left;
+  max-height: 30vw;
 }
