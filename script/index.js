@@ -138,7 +138,7 @@ var barColors = ["#ACB334","#FF4E11"];
   }
 
   function NiceNameFunction(CommunityName){
-    CommuntiyName = CommunityName.toLowerCase();
+    CommunityName = CommunityName.toLowerCase();
     words = CommunityName.split(" ");
     for (let i = 0; i < words.length; i++) {
       words[i] = words[i][0].toUpperCase() + words[i].substr(1);
