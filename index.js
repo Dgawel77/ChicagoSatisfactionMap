@@ -43,7 +43,7 @@
 
   function calcColor(community){
      const response =  fetch('./tweets.json');
-     const json =  response.json();
+     const json =  JSON.parse(response);
      var sum = 0;
      for(var i = 0; i < json.length; i++){
        if(json.area == community){
