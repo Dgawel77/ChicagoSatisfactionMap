@@ -1,6 +1,6 @@
 # Chicago SatisFraction
 
-A map of Chicago that shows who's happy based on their tweets
+A map of Chicago that shows which neighborhood is happy based on their tweets
 made for Uncommon Hacks '22
 
 # Description
