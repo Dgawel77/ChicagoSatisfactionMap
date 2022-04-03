@@ -8,7 +8,7 @@ var barColors = ["#ACB334","#FF4E11"];
 
  function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 8,
         center: {lat: 41.876, lng: -87.624},
         disableDefaultUI: true,
       });
