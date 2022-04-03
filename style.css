@@ -62,5 +62,6 @@ body{
   overflow: scroll;
   background-color: #cf9055;
   text-align:  left;
-  max-height: 30vw;
+  max-height: 10vw;
+  margin-top: 10px;
 }
