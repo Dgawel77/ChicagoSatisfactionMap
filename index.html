@@ -6,24 +6,29 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script src=".script/index.js"></script>
+    <script src="./script/index.js"></script>
 
   </head>
   <body>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKUA6RUCxciIgyaQF7Fi6BL9Xr32XNwsU&callback=initMap" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-    <div>
-      <div>TITLE</div>
+    <div id="banner">
+      <div id="title">ChicagoSatisFraction</div>
     </div>
 
     <!--The div element for the map -->
-    <div id="container-group">
-      <div id="map" class="container" ></div>
-      <div id="infographic" class="container">
-          <canvas id="myChart"></canvas>
+    <div id="information">
+      <div class="container-container">
+        <div class="container-group">
+          <div id="map" class="container" ></div>
+          <div id="infographic" class="container">
+              <canvas id="myChart"></canvas>
+          </div>
+        </div>
       </div>
     </div>
+
     <div id="message-container">
       <div id="messages"></div>
     </div>
