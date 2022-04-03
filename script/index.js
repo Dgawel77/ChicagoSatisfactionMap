@@ -68,16 +68,16 @@ var barColors = ["#ACB334","#FF4E11"];
      }
      sum/= hits
      var color = 0
-     if(sum >= 0.6){
-       color = "#FFD301"
-     }else if(sum >= 0.2){
-       color = "#ECA508"
-     }else if(sum >= -0.2){
-       color = "#D9770E"
+     if(sum >= 0.4){
+       color = "#69B34C"
+     }else if(sum >= -0.4){
+       color = "#ACB334"
      }else if(sum >= -0.6){
-       color = "#C64915"
+       color = "#FAB733"
+     }else if(sum >= -0.9){
+       color = "#FF8E15"
      }else{
-       color = "#B31B1B"
+       color = "#FF4E11"
      }
      return color
 
