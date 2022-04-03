@@ -1,7 +1,20 @@
 /* Set the size of the div element that contains the map */
-#map {
-    height: 600px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-  }
+
+
+
+.container-group{
+  width: 100%;
+}
+
+.container{
+  background-color: grey;
+  min-height: 300px;
+  max-height: 1000px;
+  height:  30vw;
+  margin: 50px;
+  float: left;
+  display: inline-block;
+  min-width: 300px;
+  width: 50vw;
+  max-width: 1000px;
+}
