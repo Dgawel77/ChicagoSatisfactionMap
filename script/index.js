@@ -109,6 +109,7 @@ var barColors = ["#ACB334","#FF4E11"];
             }]
       },
         options: {
+            segmentShowStroke: false,
             title: {
                 display: true,
                 //Change this text for the neighborhood
