@@ -98,7 +98,7 @@ var barColors = ["#ACB334","#FF4E11"];
       }
     }
 
-
+    
     new Chart("myChart", {
         type: "doughnut",
         data: {
