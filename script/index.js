@@ -134,7 +134,7 @@ var barColors = ["#ACB334","#FF4E11"];
     for(var i = 0; i < json.length; i++){
 
       if(json[i].area=== community+"\n"){
-        document.getElementById("tweets").innerHTML += json[i].text + "\n\n"
+        document.getElementById("tweets").innerHTML += "<p>" + json[i].text + "</p>"
         count += 1
       }
       if (count > max){

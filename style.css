@@ -9,6 +9,9 @@
   font-family: uncommonfont;
 }
 
+p{
+  padding-bottom: 5px;
+}
 
 body{
   height: 100%;
@@ -62,6 +65,6 @@ body{
   overflow: scroll;
   background-color: #cf9055;
   text-align:  left;
-  max-height: 10vw;
+  max-height: 20vw;
   margin-top: 10px;
 }
