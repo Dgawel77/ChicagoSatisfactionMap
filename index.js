@@ -4,7 +4,8 @@ TweetsJson = [{'area': 'DOUGLAS\n', 'text': "No slots showing for the below loca
  function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
-        center: {lat: 41.876, lng: -87.624}
+        center: {lat: 41.876, lng: -87.624},
+        disableDefaultUI: true,
       });
 
 
@@ -45,18 +46,22 @@ TweetsJson = [{'area': 'DOUGLAS\n', 'text': "No slots showing for the below loca
 
   function calcColor(community){
      const json =  TweetsJson
-     var sum = 0;
+     var hits = 0
+     var sum = 0
      for(var i = 0; i < json.length; i++){
-       if(json.area == community){
+
+       if(json[i].area=== community+"\n"){
+         hits+=1
          var mult = 0
-         if (json.label == "NEGATIVE"){
+         if (json[i].label === "NEGATIVE"){
            mult = -1
          }else{
            mult = 1
          }
-         sum+= mult*json.score
+         sum+= mult*json[i].score
        }
      }
+     sum/= hits
      var color = 0
      if(sum >= 0.6){
        color = "#FFD301"
@@ -69,6 +74,6 @@ TweetsJson = [{'area': 'DOUGLAS\n', 'text': "No slots showing for the below loca
      }else{
        color = "#B31B1B"
      }
-     return color
+     return sum
 
   }
