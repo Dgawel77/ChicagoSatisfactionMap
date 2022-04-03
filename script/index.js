@@ -116,6 +116,7 @@ var barColors = ["#ACB334","#FF4E11"];
             segmentShowStroke: false,
             title: {
                 display: true,
+                color:white,
                 //Change this text for the neighborhood
                 text: "Percentage of happy tweets in " + community
             }
