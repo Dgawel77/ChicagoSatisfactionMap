@@ -45,7 +45,7 @@ var barColors = ["#ACB334","#FF4E11"];
       // defined in the function passed to setStyle()
       map.data.addListener("mouseover", (event) => {
 
-        if(clickBool == false){
+        if(clickBool === false){
           map.data.revertStyle();
           map.data.overrideStyle(event.feature, { strokeWeight: 8 });
 
