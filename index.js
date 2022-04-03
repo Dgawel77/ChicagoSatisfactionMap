@@ -74,6 +74,6 @@ TweetsJson = [{'area': 'DOUGLAS\n', 'text': "No slots showing for the below loca
      }else{
        color = "#B31B1B"
      }
-     return sum
+     return color
 
   }
