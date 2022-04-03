@@ -36,7 +36,7 @@ var barColors = ["#ACB334","#FF4E11"];
       // When the user hovers, tempt them to click by outlining the letters.
       // Call revertStyle() to remove all overrides. This will use the style rules
       // defined in the function passed to setStyle()
-      map.data.addListener("mouseover", (event) => {
+      map.data.addListener("click", (event) => {
         map.data.revertStyle();
         map.data.overrideStyle(event.feature, { strokeWeight: 8 });
 
