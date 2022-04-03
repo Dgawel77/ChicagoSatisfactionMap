@@ -57,8 +57,7 @@ body{
   width: 100vw;
   text-align: center;
   font-size: 50px;
-
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 #chart{
