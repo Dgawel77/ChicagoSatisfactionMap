@@ -131,10 +131,18 @@ var barColors = ["#ACB334","#FF4E11"];
                 display: true,
                 color: "#fff",
                 //Change this text for the neighborhood
-                text: "Percentage of happy tweets in " + community
+                text: "Percentage of happy tweets in " + NiceNameFunction(community)
             }
       }
     });
+  }
+
+  function NiceNameFunction(CommunityName){
+    words = CommunityName.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+    return words.join(" ");
   }
 
   function exampleMessages(community){
