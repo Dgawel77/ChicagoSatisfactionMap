@@ -42,6 +42,7 @@ var barColors = ["#ACB334","#FF4E11"];
 
 
         generateChart(event.feature.getProperty("community"))
+        exampleMessages(event.feature.getProperty("community"))
       });
       map.data.addListener("mouseout", (event) => {
         map.data.revertStyle();
