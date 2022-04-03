@@ -105,7 +105,8 @@ var barColors = ["#ACB334","#FF4E11"];
             labels: xValues,
             datasets: [{
                 backgroundColor: barColors,
-                data: [pos,neg]
+                data: [pos,neg],
+                borderWidth: 0
             }]
       },
         options: {
