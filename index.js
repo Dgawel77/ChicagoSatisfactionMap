@@ -84,6 +84,7 @@ var barColors = ["#38c76f","#ff0000"];
   }
 
   function generateChart(community){
+    const json = TweetsJson
     var pos = 0
     var neg = 0
     for(var i = 0; i < json.length; i++){
